@@ -12,9 +12,9 @@
 <body>
     <div class="container mainDiv">
         <div class="card p-4 bg-warning" style="border-radius: 15px;">
-            <input type="text" class=" my-3 fs-3" aria-label="Username" id="Answer">
+            <input type="text" name="Output" class=" my-3 fs-3" aria-label="Username" id="Answer">
             <div class="d-flex mx-auto">
-                <button class="btn btn-secondary">(</button>
+                <button class="btn btn-secondary" value="(" onclick="Output.value +='('">(</button>
                 <button class="btn btn-secondary">)</button>
                 <button class="btn btn-secondary">%</button>
                 <button class="btn btn-danger">AC</button>
@@ -40,11 +40,13 @@
             <div class="d-flex mx-auto">
                 <button class="btn btn-light">0</button>
                 <button class="btn btn-light">.</button>
-                <button class="btn btn-light">=</button>
+                <button class="btn " style="background-color: #13bb44; color: white;">=</button>
                 <button class="btn btn-secondary">+</button>
             </div>
         </div>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
